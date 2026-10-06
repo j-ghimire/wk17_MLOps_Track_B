@@ -1,0 +1,36 @@
+[project]
+name = "wk17-agentic-mlops-part-b"
+version = "0.1.0"
+description = "W15 support assistant with W16 agentic retrieval and W17 MLOps evaluation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.30,<1",
+  "pydantic-settings>=2.4,<3",
+  "slowapi>=0.1.9,<1",
+  "httpx>=0.27,<1",
+  "requests>=2.32,<3",
+  "streamlit>=1.38,<2",
+  "mlflow>=3.0,<4",
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "evidently>=0.7,<1",
+]
+
+[project.optional-dependencies]
+llm = ["openai>=1.50,<3"]
+
+[dependency-groups]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*", "mlops*"]

@@ -1,0 +1,4 @@
+configuration,query_count,task_success_rate,route_accuracy,safe_clarification_rate,valid_tool_action_rate,mean_trajectory_length,mean_estimated_context_words,retrieval_top_k,min_evidence_score,max_iterations
+fast,11,0.8181818181818182,0.8888888888888888,0.5,1.0,2.0,36.81818181818182,1,0.05,1
+balanced,11,0.8181818181818182,0.8888888888888888,1.0,1.0,2.090909090909091,42.27272727272727,3,0.18,2
+thorough,11,0.9090909090909091,0.8888888888888888,1.0,1.0,2.1818181818181817,44.27272727272727,5,0.12,3

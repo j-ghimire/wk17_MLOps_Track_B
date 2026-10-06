@@ -1,0 +1,34 @@
+configuration,query_id,expected_category,predicted_category,intent,completed,asked_for_clarification,valid_tool_actions,trajectory_length,confidence,evidence_score,estimated_context_words,actions,prompt
+fast,1,ACCOUNT,ACCOUNT,password_recovery,1,0,1,2,0.79,0.273,41,"['retrieve', 'verify']",I forgot my password and did not get the reset email
+fast,2,CARD,CARD,card_payment_declined,1,0,1,2,0.79,0.231,42,"['retrieve', 'verify']",My card payment was declined and I need to know what to check next
+fast,3,CARD,CARD,card_stolen,1,0,1,2,0.91,0.3,35,"['retrieve', 'verify']",My card was stolen and I want to freeze it
+fast,4,CASH_WITHDRAWAL,CASH_WITHDRAWAL,cash_withdrawal_issue,1,0,1,2,0.91,0.125,35,"['retrieve', 'verify']",I need help with withdrawals and ATM fees
+fast,5,CASH_DEPOSIT,CASH_DEPOSIT,cash_deposit_issue,1,0,1,2,0.91,0.333,43,"['retrieve', 'verify']",My cash deposit balance has not updated and I kept the receipt
+fast,6,TRANSFER,TRANSFER,transfer_pending,1,0,1,2,0.79,0.273,39,"['retrieve', 'verify']",My transfer is pending and I need to check the recipient
+fast,7,REFUND,REFUND,refund_status,1,0,1,2,0.79,0.3,37,"['retrieve', 'verify']",How can I check the status of a merchant refund?
+fast,8,CARD_DELIVERY,CARD_DELIVERY,card_delivery,1,0,1,2,0.79,0.333,37,"['retrieve', 'verify']",How do I track the delivery of my card?
+fast,9,TOP_UP,ACCOUNT,ask_for_clarification,0,1,1,2,0.4,0.286,32,"['retrieve', 'ask_user']",How do I top up my account?
+fast,10,CLARIFY,GENERAL,ask_for_clarification,1,1,1,2,0.35,0.0,23,"['retrieve', 'ask_user']",I need help with something else
+fast,11,CLARIFY,ACCOUNT,password_recovery,0,0,1,2,0.67,0.111,41,"['retrieve', 'verify']",Tell me the special bank policy for my account
+balanced,1,ACCOUNT,ACCOUNT,password_recovery,1,0,1,2,0.79,0.273,41,"['retrieve', 'verify']",I forgot my password and did not get the reset email
+balanced,2,CARD,CARD,card_payment_declined,1,0,1,2,0.79,0.231,50,"['retrieve', 'verify']",My card payment was declined and I need to know what to check next
+balanced,3,CARD,CARD,card_stolen,1,0,1,2,0.91,0.3,44,"['retrieve', 'verify']",My card was stolen and I want to freeze it
+balanced,4,CASH_WITHDRAWAL,CASH_WITHDRAWAL,ask_for_clarification,0,1,1,2,0.4,0.125,41,"['retrieve', 'ask_user']",I need help with withdrawals and ATM fees
+balanced,5,CASH_DEPOSIT,CASH_DEPOSIT,cash_deposit_issue,1,0,1,2,0.91,0.333,53,"['retrieve', 'verify']",My cash deposit balance has not updated and I kept the receipt
+balanced,6,TRANSFER,TRANSFER,transfer_pending,1,0,1,2,0.79,0.273,39,"['retrieve', 'verify']",My transfer is pending and I need to check the recipient
+balanced,7,REFUND,REFUND,refund_status,1,0,1,2,0.79,0.3,37,"['retrieve', 'verify']",How can I check the status of a merchant refund?
+balanced,8,CARD_DELIVERY,CARD_DELIVERY,card_delivery,1,0,1,2,0.79,0.333,46,"['retrieve', 'verify']",How do I track the delivery of my card?
+balanced,9,TOP_UP,ACCOUNT,ask_for_clarification,0,1,1,3,0.4,0.286,52,"['retrieve', 'search_again', 'ask_user']",How do I top up my account?
+balanced,10,CLARIFY,GENERAL,ask_for_clarification,1,1,1,2,0.35,0.0,23,"['retrieve', 'ask_user']",I need help with something else
+balanced,11,CLARIFY,ACCOUNT,ask_for_clarification,1,1,1,2,0.4,0.111,39,"['retrieve', 'ask_user']",Tell me the special bank policy for my account
+thorough,1,ACCOUNT,ACCOUNT,password_recovery,1,0,1,2,0.79,0.273,41,"['retrieve', 'verify']",I forgot my password and did not get the reset email
+thorough,2,CARD,CARD,card_payment_declined,1,0,1,2,0.79,0.231,58,"['retrieve', 'verify']",My card payment was declined and I need to know what to check next
+thorough,3,CARD,CARD,card_stolen,1,0,1,2,0.91,0.3,44,"['retrieve', 'verify']",My card was stolen and I want to freeze it
+thorough,4,CASH_WITHDRAWAL,CASH_WITHDRAWAL,cash_withdrawal_issue,1,0,1,2,0.91,0.125,39,"['retrieve', 'verify']",I need help with withdrawals and ATM fees
+thorough,5,CASH_DEPOSIT,CASH_DEPOSIT,cash_deposit_issue,1,0,1,2,0.91,0.333,57,"['retrieve', 'verify']",My cash deposit balance has not updated and I kept the receipt
+thorough,6,TRANSFER,TRANSFER,transfer_pending,1,0,1,2,0.79,0.273,39,"['retrieve', 'verify']",My transfer is pending and I need to check the recipient
+thorough,7,REFUND,REFUND,refund_status,1,0,1,2,0.79,0.3,37,"['retrieve', 'verify']",How can I check the status of a merchant refund?
+thorough,8,CARD_DELIVERY,CARD_DELIVERY,card_delivery,1,0,1,2,0.79,0.333,46,"['retrieve', 'verify']",How do I track the delivery of my card?
+thorough,9,TOP_UP,ACCOUNT,ask_for_clarification,0,1,1,4,0.4,0.286,64,"['retrieve', 'search_again', 'search_again', 'ask_user']",How do I top up my account?
+thorough,10,CLARIFY,GENERAL,ask_for_clarification,1,1,1,2,0.35,0.0,23,"['retrieve', 'ask_user']",I need help with something else
+thorough,11,CLARIFY,ACCOUNT,ask_for_clarification,1,1,1,2,0.4,0.111,39,"['retrieve', 'ask_user']",Tell me the special bank policy for my account
